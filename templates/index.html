@@ -17,11 +17,11 @@
 
 <body>
   <nav class="row" style="background: grey; color: white;">
-    <div align="center"><h1 class="col-md-3 text-center">Weather Detector</h1></div>
+    <div><h1 class="col-md-3 text-center">Weather Detector</h1></div>
   </nav>
   <br />
   <br />
-  <center class="row">
+  <div class="row">
     <form action="" method="post" class="col-md-6 col-md-offset-3">
       {% csrf_token %}
       <div class="input-group">
@@ -32,7 +32,7 @@
           </button>
         </div>
         <form>
-  </center>
+        </div>
   <div class="row">
     {% if data.country_code %}
     <div class="col-md-6 col-md-offset-3">
